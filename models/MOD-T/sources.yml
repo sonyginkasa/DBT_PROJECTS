@@ -1,0 +1,6 @@
+sources:
+  - name: stibo
+    database: DEV_STIBO
+    schema: STG
+    tables:
+      - name: employee_data

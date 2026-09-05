@@ -1,0 +1,12 @@
+models:
+  - name: dt_employees
+    columns:
+      - name: employee_id
+        data_tests:
+          - unique
+          - not_null
+      - name: department
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Sales', 'IT', 'Finance', 'HR', 'Operations', 'Marketing', 'Support', 'Admin', 'Product']
